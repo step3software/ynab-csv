@@ -63,7 +63,7 @@ angular.element(document).ready ->
     $scope.ynab_map =
       Date:     'Date'
       Payee:    'Payee'
-      Category: 'Category'
+      Category: 'Category2'
       Memo:     'Memo'
       Outflow:  'Amount'
       Inflow:   'Amount'
