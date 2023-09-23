@@ -57,13 +57,13 @@ class window.DataObject
               when 'Outflow'
                 number = numberfy(cell)
                 if lookup['Outflow'] == lookup['Inflow']
-                  tmp_row[col] = Math.abs(number) if number < 0
+                  tmp_row[col] = Math.abs(number) if number > 0
                 else
                   tmp_row[col] = number
               when 'Inflow'
                 number = numberfy(cell)
                 if lookup['Outflow'] == lookup['Inflow']
-                  tmp_row[col] = number if number > 0
+                  tmp_row[col] = number if number < 0
                 else
                   tmp_row[col] = number
               else tmp_row[col] = cell
